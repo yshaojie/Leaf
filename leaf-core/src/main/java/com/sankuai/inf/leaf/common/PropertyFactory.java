@@ -11,7 +11,8 @@ public class PropertyFactory {
     private static final Properties prop = new Properties();
     static {
         try {
-            prop.load(PropertyFactory.class.getClassLoader().getResourceAsStream("leaf.properties"));
+            String file = "application-" + System.getenv("SPRING_PROFILES_ACTIVE") + ".properties";
+            prop.load(PropertyFactory.class.getClassLoader().getResourceAsStream(file));
         } catch (IOException e) {
             logger.warn("Load Properties Ex", e);
         }
