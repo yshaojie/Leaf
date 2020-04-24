@@ -92,7 +92,7 @@
                 <configuration>
                     <allowInsecureRegistries>true</allowInsecureRegistries>
                     <from>
-                        <image>harbor.corp.doumi.com/library/distroless_java:8</image>
+                        <image>harbor.corp.doumi.com/library/doumi_distroless_java:8</image>
                     </from>
                     <to>
                         <!--上传镜像地址-->
